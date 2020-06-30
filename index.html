@@ -7,93 +7,126 @@
   <link href="images/webclip.png" rel="apple-touch-icon">
   <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
   <style>
+    a {
+      color: #0038ff;
+    }
+    .bg-primary {
+      background: #0038ff;
+    }
+
+    .herotext {
+      width: 290px;
+    }
+
     body {
-      -webkit-font-smoothing: antialiased;
-      color: rgba(0, 0, 0, 0.9);
+    	-webkit-font-smoothing: antialiased;
+    	-moz-osx-font-smoothing: grayscale;
     }
 
-    a.btn {
-      border: 1px solid rgba(0, 0, 0, 0.2);
-      padding: 0.5rem;
-      text-decoration: none;
+    html {
+      scroll-behavior: smooth;
+
+    }
+
+    body * {
       border-radius: 2px;
-      background: white;
-      color: inherit;
-      font-weight: bold;
     }
 
-    a.btn:hover {
-      transform: translateY(-2px);
+    .btn {
+      padding: 12px 20px;
+      background: white;
+      border: 1.5px solid #bbb;
+      text-decoration: none;
+      color: black;
+      display: inline-block;
+      transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+    .btn:hover {
+      transform: translateY(-2px) scale(1.02);
+    }
+
+    .cta {
+      background: #0038ff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      color: white;
+      padding: 64px 32px;
+    }
+
+    .joshpic {
+      object-fit: cover;
+      border-radius: 100%;
+      object-position: 0px 0px;
+      margin-right: 12px;
+      flex-shrink: 0;
+    }
+
+    input {
+      border: 1.5px solid #bbb;
+      padding: 4px;
     }
   </style>
 </head>
-<body class="sans-serif pa4">
-  <div class="center mw7">
-    <section class="dib mv5 relative z-10">
-      <img src="images/heatmap.jpg" srcset="images/heatmap-p-500.jpeg 500w, images/heatmap.jpg 780w" alt="" class="fr w-40 ml3">
-      <div class="measure">
-        <h1 class="f3 lh-copy">Argos is a tool for mapping ecological features using drones. It will save you<br> days of field work.</h1>
-        <h2 class="f3 lh-copy">We use drone imagery and machine learning to generate high-accuracy species distribution maps.</h2>
-        <a href="#features" class="btn">Learn More</a>
-      </div>
+<body class="sans-serif pa3">
+  <nav class="flex items-center fixed left-0 right-0 top-0 pa3">
+    <img src="images/argos-logo.svg" width="25" height="25" alt="Argos logo" />
+    <span class="tracked f6 b ml1">ARGOS</span>
+    <a class="ml-auto underline" href="#contact">Contact us</a>
+  </nav>
+  <div>
+    <section class="flex flex-column items-center">
+      <h1 class="mt5 mb3 f3 fw5 tc center herotext">
+        Argos is a tool for mapping ecological features using drones. It will save you days of field work.
+      </h1>
+      <a href="#features" class="btn mt2">Learn More</a>
+      <img src="https://via.placeholder.com/500" class="w-100 mt4" />
     </section>
-    <section>
-      <div>
-        <p>&quot;Having used ARGOS over the past two years to monitor invasive species impacts in rare Great Lakes ecosystems, I can attest that this platform is an excellent tool for rapidly evaluating baseline and post-treatment data, generating powerful maps to inform conservation decisions, facilitating protection of critical ecosystems and habitat, focusing control efforts in the most important places, and informing adaptive restoration.&quot;</p>
-        <div>
-          <img src="images/josh.jpg" width="64" height="64" alt="">
-          <p><em>Joshua G. Cohen<br>‍</em>Josh is a conservation scientist and lead ecologist at the <a href="https://mnfi.anr.msu.edu/" target="_blank">Michigan Natural Features Inventory</a></p>
+    <section class="mt5">
+        <p class="f4 tc">&quot;Argos is an excellent tool for rapidly evaluating baseline and post-treatment data, generating powerful maps to inform conservation decisions, facilitating protection of critical ecosystems and habitat, focusing control efforts in the most important places, and informing adaptive restoration.&quot;</p>
+        <div class="flex items-center justify-center">
+          <img src="images/josh.jpg" width="48" height="48" alt="Joshua G. Cohen" class="joshpic">
+          <p class="f6 mw5">Joshua G. Cohen is a conservation scientist and lead ecologist at the <a href="https://mnfi.anr.msu.edu/" target="_blank">Michigan Natural Features Inventory</a></p>
         </div>
-      </div>
     </section>
+    <div class="h3" id="contact"></div>
+    <section class="cta">
+        <h2 class="ma0 f3 fw5">Contact us.</h2>
+        <p>Enter your email and we'll reach out to schedule your first flight. </p>
+        <input type="email" placeholder="Email"/>
+        <a href="#" class="btn mt3 ba0">Contact Us</a>
+    </section>
+    <div class="h3" id="features"></div>
     <section>
       <div>
-        <h2>Schedule your first flight today.</h2>
-        <p>Our team of expereinced and certified drone operators will come and walk you through the process.</p><a href="#" >Contact Us</a></div>
-    </section>
-    <section id="features">
-      <div>
-        <img src="images/DJI_0938-small.jpg" srcset="images/DJI_0938-small-p-500.jpeg 500w, images/DJI_0938-small-p-800.jpeg 800w, images/DJI_0938-small.jpg 1000w" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 364px, 470px" alt="">
-        <div>
-          <h2>Map massive areas.</h2>
-          <p>Flights can be done in a matter of hours. This means you can easily map large areas multiple times throughout the year to track how the ecosystem changes over time.</p>
-        </div>
+        <h2 class="f3 fw5">Map massive areas.</h2>
+        <p class="f4 lh-copy">Flights can be done in a matter of hours. This means you can easily map large areas multiple times throughout the year to track how the ecosystem changes over time.</p>
+        <img src="https://via.placeholder.com/500" class="w-100 mt2"/>
+      </div>
+      <div class="mt5">
+        <h2 class="f3 fw5">Detect any species.</h2>
+        <p class="f4 lh-copy">If you can see it, we can map it. Our advanced machine learning algorithm can detect almost any plant species in a non-invasive way.</p>
+        <img src="https://via.placeholder.com/500" class="w-100 mt2"/>
+      </div>
+      <div class="mt5">
+        <h2 class="f3 fw5">Store and organize your maps.</h2>
+        <p class="f4 lh-copy">Upload flights, generate maps, and train new species networks all from our easy-to-use web application.</p>
+        <img src="https://via.placeholder.com/500" class="w-100 mt2"/>
       </div>
     </section>
-    <section>
-      <div>
-        <div>
-          <h2>Detect any species.</h2>
-          <p>If you can see it, we can map it. Our advanced machine learning algorithm can detect almost any plant species in a non-invasive way.</p>
-        </div>
-        <img src="images/frang-edited.jpg" srcset="images/frang-edited-p-500.jpeg 500w, images/frang-edited-p-800.jpeg 800w, images/frang-edited-p-1080.jpeg 1080w, images/frang-edited.jpg 1184w" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 364px, 470px" alt="">
-      </div>
+    <section  class="cta mt5">
+        <h2 class="ma0 f3 fw5">Get a free consultation.</h2>
+        <p>Enter your email below and we'll reach out to hear more about your project.</p>
+        <input type="email" placeholder="Email"/>
+        <a href="#"  class="btn mt3 ba0">Contact Us</a>
     </section>
-    <section>
-      <div>
-        <img src="images/app.jpg" srcset="images/app-p-500.jpeg 500w, images/app-p-800.jpeg 800w, images/app.jpg 1000w" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 364px, 470px" alt="">
-        <div>
-          <h2>Store and organize your maps.</h2>
-          <p>Upload flights, generate maps, and train new species networks all from our easy-to-use web application.</p>
-        </div>
-      </div>
-    </section>
-    <section>
-      <div>
-        <h2>Get a free consultation.</h2>
-        <p>We&#x27;d love to hear more about the unique challenges and opportunities of your location.</p>
-        <a href="#" >Contact Us</a>
-      </div>
-    </section>
-    <footer>
-      <div>
-        <div>Brought to you by</div>
-        <div>Michigan Aerospace</div>
-      </div>
-    </footer>
+    <a href="https://www.michiganaerospace.com/" class="black no-underline flex flex-column items-center justify-center mt5">
+      <span class="f6 tracked mb2">Brought to you by</span>
+      <img src="images/mac.png" alt="Michigan Aerospace logo" class="w4"/>
+    </a>
   </div>
-  <a href="/contact" class="btn fixed ma4 top-0 right-0 z-10">
-    Contact Us ⤳
-  </a>
 </body>
 </html>
