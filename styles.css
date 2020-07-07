@@ -1,0 +1,192 @@
+/** FOUNDATION **/
+:root {
+  --primary: #0038ff;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: black;
+  fill: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  padding: 16px;
+}
+
+:focus {
+  outline: var(--primary) solid 1px;
+  outline-offset: -1px;
+}
+
+body * {
+  margin-top: 16px;
+}
+
+/** COMPONENTS **/
+
+h1,
+h2 {
+  line-height: 30px;
+  font-weight: 450;
+  margin-bottom: 0;
+}
+
+h1 {
+  font-size: 1.5rem !important;
+}
+
+h3 {
+  font-size: 1.25rem !important;
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+small {
+  font-size: 0.75rem;
+  letter-spacing: 0.03rem;
+}
+
+a {
+  color: var(--primary);
+  padding: 8px;
+  display: inline-block;
+}
+
+a:hover {
+  color: black;
+}
+
+button {
+  padding: 12px 20px;
+  background: white;
+  border: 1.5px solid #bbb;
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  transform: translateY(-2px) scale(1.02);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  padding: 8px;
+  margin: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+nav > a {
+  margin: 0;
+}
+
+nav > a:last-child {
+  margin-left: auto;
+}
+
+nav > a > img {
+  height: 24px;
+  object-fit: contain;
+  margin: 0;
+}
+
+input {
+  border: 1.5px solid #bbb;
+  background: white;
+  padding: 4px;
+  color: black;
+  border-radius: 2px;
+  width: 192px;
+}
+
+input:focus {
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/** SECTIONS **/
+section {
+  margin-top: 64px;
+}
+
+.hero {
+  margin-top: 11vh;
+  text-align: center;
+}
+
+.testimonial {
+  text-align: center;
+}
+
+.profile {
+  text-align: left;
+  width: 300px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.profile > img {
+  float: left;
+  border-radius: 100%;
+  height: 56px;
+  width: 56px;
+  object-position: top;
+  object-fit: cover;
+  flex-shrink: 0;
+  margin-right: 8px;
+}
+
+.cta {
+  background: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  padding-bottom: 32px;
+  border-radius: 2px;
+}
+
+.mac {
+  text-decoration: none;
+  color: black;
+  width: 125px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px;
+}
+
+.mac > img {
+  margin-top: 0;
+}
+
+#features {
+  padding-top: 64px;
+  margin-top: 0;
+}
+
+/** BREAKPOINTS **/
+
+@media screen and (min-width: 30em) and (max-width: 60em) {
+}
+
+@media screen and (min-width: 60em) {
+}

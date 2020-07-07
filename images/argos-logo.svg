@@ -1,18 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 43 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+<svg width="100%" height="100%" viewBox="0 0 142 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
     <g transform="matrix(1,0,0,1,-31.75,-30.75)">
-        <g transform="matrix(1,0,0,3.92204,3,16)">
-            <g transform="matrix(1,0,0,0.254969,-2,-4.07951)">
+        <g transform="matrix(1,0,0,5.31709,0,0)">
+            <g transform="matrix(1,0,0,0.188073,-767.03,-1.42507)">
+                <text x="847.186px" y="67.921px" style="font-family:'SFProText-Bold', 'SF Pro Text';font-weight:700;font-size:24px;fill:rgb(17,17,17);">A<tspan x="866.364px 884.628px 904.474px 924.952px " y="67.921px 67.921px 67.921px 67.921px ">RGOS</tspan></text>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,5.31709,0,0)">
+            <g transform="matrix(1,0,0,0.188073,1,2.39808e-14)">
                 <path d="M42,32C47.519,32 52,36.481 52,42C52,47.519 47.519,52 42,52C36.481,52 32,47.519 32,42C32,36.481 36.481,32 42,32ZM42,37C44.76,37 47,39.24 47,42C47,44.76 44.76,47 42,47C39.24,47 37,44.76 37,42C37,39.24 39.24,37 42,37Z" style="fill:none;stroke:black;stroke-width:2.5px;"/>
             </g>
-            <g transform="matrix(1,0,0,0.254969,18,-4.07951)">
+        </g>
+        <g transform="matrix(1,0,0,5.31709,0,0)">
+            <g transform="matrix(1,0,0,0.188073,21,2.26485e-14)">
                 <path d="M42,32C47.519,32 52,36.481 52,42C52,47.519 47.519,52 42,52C36.481,52 32,47.519 32,42C32,36.481 36.481,32 42,32ZM42,37C44.76,37 47,39.24 47,42C47,44.76 44.76,47 42,47C39.24,47 37,44.76 37,42C37,39.24 39.24,37 42,37Z" style="fill:none;stroke:black;stroke-width:2.5px;"/>
             </g>
-            <g transform="matrix(1,0,0,0.254969,18,1.01988)">
+        </g>
+        <g transform="matrix(1,0,0,5.31709,0,0)">
+            <g transform="matrix(1,0,0,0.188073,21,3.76145)">
                 <path d="M42,32C47.519,32 52,36.481 52,42C52,47.519 47.519,52 42,52C36.481,52 32,47.519 32,42C32,36.481 36.481,32 42,32ZM42,37C44.76,37 47,39.24 47,42C47,44.76 44.76,47 42,47C39.24,47 37,44.76 37,42C37,39.24 39.24,37 42,37Z" style="fill:none;stroke:black;stroke-width:2.5px;"/>
             </g>
-            <g transform="matrix(1,0,0,0.254969,-2,1.01988)">
+        </g>
+        <g transform="matrix(1,0,0,5.31709,0,0)">
+            <g transform="matrix(1,0,0,0.188073,1,3.76145)">
                 <path d="M42,32C47.519,32 52,36.481 52,42C52,47.519 47.519,52 42,52C36.481,52 32,47.519 32,42C32,36.481 36.481,32 42,32ZM42,37C44.76,37 47,39.24 47,42C47,44.76 44.76,47 42,47C39.24,47 37,44.76 37,42C37,39.24 39.24,37 42,37Z" style="fill:none;stroke:black;stroke-width:2.5px;"/>
             </g>
         </g>
