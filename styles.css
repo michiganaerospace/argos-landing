@@ -30,14 +30,7 @@ h2 {
   line-height: 30px;
   font-weight: 450;
   margin-bottom: 0;
-}
-
-h1 {
-  font-size: 1.5rem !important;
-}
-
-h3 {
-  font-size: 1.25rem !important;
+  font-size: 1.5rem;
 }
 
 p {
@@ -129,6 +122,12 @@ section {
   text-align: center;
 }
 
+.hero > h1 {
+  width: 290px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .testimonial {
   text-align: center;
 }
@@ -185,7 +184,52 @@ section {
 
 /** BREAKPOINTS **/
 
-@media screen and (min-width: 30em) and (max-width: 60em) {
+@media screen and (min-width: 30em) {
+  section {
+    margin-top: 192px;
+  }
+
+  .hero {
+    margin-top: 144px;
+  }
+  .hero > h1 {
+    font-size: 2rem;
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 2.5rem;
+  }
+
+  .hero > img {
+    margin-top: 48px;
+  }
+
+  .testimonial {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  #features {
+    padding-top: 192px;
+  }
+
+  .features {
+    display: flex;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .features > div {
+    width: 48%;
+    margin-right: 32px;
+    flex-shrink: 0;
+  }
+
+  .features.middle > div {
+    order: 1;
+    margin-right: 0;
+    margin-left: 32px;
+  }
 }
 
 @media screen and (min-width: 60em) {
