@@ -6,91 +6,85 @@
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
   <link href="images/webclip.png" rel="apple-touch-icon">
-  <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
-  <link href="styles.css" rel="stylesheet" />
 </head>
 
 <body id="top">
   <nav>
-    <a href="#top"><img src="images/argos-logo.svg" alt="Argos logo" /></a>
+    <a href="#top"><img src="images/argos-logo.svg" alt="Argos logo"
+        width="80" /></a>
     <a href="#contact">Contact us</a>
   </nav>
-  <section class="hero">
-    <div>
+  <header>
+    <hgroup>
       <h1>
         Argos is a tool for mapping ecological features using drones. It will
         save you days of field work.
       </h1>
       <a href="#features">Learn More ⤵</a>
-    </div>
+    </hgroup>
     <img src="https://via.placeholder.com/500" />
-  </section>
-  <section class="testimonial">
-    <p>&quot;Argos is an excellent tool for rapidly
-      evaluating baseline and post-treatment data, generating powerful maps to
-      inform conservation decisions, facilitating protection of critical
-      ecosystems and habitat, focusing control efforts in the most important
-      places, and informing adaptive restoration.&quot;</p>
-    <div class="profile">
-      <img src="images/josh.jpg" alt="Joshua G. Cohen" />
-      <small>Joshua G. Cohen is a conservation scientist and lead
-        ecologist at the Michigan Natural Features Inventory</small>
-    </div>
-  </section>
-  <section class="cta">
+  </header>
+  <blockquote>&quot;Argos is an excellent tool for rapidly
+    evaluating baseline and post-treatment data, generating powerful maps to
+    inform conservation decisions, facilitating protection of critical
+    ecosystems and habitat, focusing control efforts in the most important
+    places, and informing adaptive restoration.&quot;</blockquote>
+  <cite>
+    <img src="images/josh.jpg" alt="Joshua G. Cohen" />
+    Joshua G. Cohen<br>
+    <small>
+      Conservation scientist and lead ecologist<br>
+      at the Michigan Natural Features Inventory
+    </small>
+  </cite>
+  <form data-netlify="true" netlify-honeypot="bot-field">
     <h2>Contact us.</h2>
     <p>Enter your email and we'll reach out to schedule your first flight.
     </p>
-    <form data-netlify="true" netlify-honeypot="bot-field">
-      <input hidden name="bot-field" />
-      <input type="email" name="email" placeholder="Email" />
-      <br>
-      <button type="submit">Contact Us</button>
-    </form>
-  </section>
-  <section id="features" class="features">
-    <div>
+    <input name="bot-field" />
+    <input type="email" name="email" placeholder="Email" />
+    <button type="submit">Contact Us</button>
+  </form>
+  <figure id="features">
+    <figcaption>
       <h2>Map massive areas.</h2>
       <p>Flights can be done in a matter of hours.
         This means you can easily map large areas multiple times throughout
         the year to track how the ecosystem changes over time.</p>
-    </div>
+    </figcaption>
     <img src="https://via.placeholder.com/500" />
-  </section>
-  <section class="features middle">
-    <div>
+  </figure>
+  <figure>
+    <figcaption>
       <h2>Detect any species.</h2>
       <p>If you can see it, we can map it. Our advanced
         machine learning algorithm can detect almost any plant species in a
         non-invasive way.</p>
-    </div>
-    <img class="" src="https://via.placeholder.com/500" />
-  </section>
-  <section class="features">
-    <div>
-      <h2>Store and organize your maps.</h2>
+    </figcaption>
+    <img src="https://via.placeholder.com/500" />
+  </figure>
+  <figure>
+    <figcaption>
+      <h2>Manage your maps.</h2>
       <p>Upload flights, generate maps, and train new
         species networks all from our easy-to-use web application.</p>
-    </div>
+    </figcaption>
     <img src="https://via.placeholder.com/500" />
-  </section>
-  <section class="cta" id="contact">
+  </figure>
+  <form data-netlify="true" netlify-honeypot="bot-field" id="contact">
     <h2>Get a free consultation.</h2>
     <p>Enter your email below and we'll reach out to hear more about your
       project.</p>
-    <form data-netlify="true" netlify-honeypot="bot-field">
-      <input hidden name="bot-field" />
-      <input type="email" placeholder="Email" />
-      <br>
-      <button type="submit">Contact Us</button>
-    </form>
-  </section>
-  <section class="footer">
-    <a href="https://www.michiganaerospace.com/" class="mac">
-      <small>Brought to you by</small>
-      <img src="images/mac.png" alt="Michigan Aerospace logo" />
+    <input hidden name="bot-field" />
+    <input type="email" placeholder="Email" />
+    <button type="submit">Contact Us</button>
+  </form>
+  <footer>
+    <a href="https://www.michiganaerospace.com/" target="_blank">
+      <small>Brought to you by Michigan Aerospace</small>
+      <img src="images/mac.png" alt="Michigan Aerospace logo" width="24" />
     </a>
-  </section>
+  </footer>
 </body>
 
 </html>
